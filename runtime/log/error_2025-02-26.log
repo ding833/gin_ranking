@@ -1,0 +1,120 @@
+panic error time:2025-02-26 16:10:48
+runtime error: integer divide by zero
+stacktrace from panic:goroutine 18 [running]:
+runtime/debug.Stack()
+	D:/file/golang/src/runtime/debug/stack.go:26 +0x6b
+gin-ranking/pkg/logger.Recover.func1()
+	d:/go/gin-ranking/pkg/logger/logger.go:144 +0x56a
+panic({0xb8d920?, 0xf60f40?})
+	D:/file/golang/src/runtime/panic.go:787 +0x136
+gin-ranking/controllers.OrderController.GetList({}, 0xc000150000)
+	d:/go/gin-ranking/controllers/order.go:25 +0x48
+github.com/gin-gonic/gin.(*Context).Next(0xc000150000)
+	C:/goproject/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185 +0x7a
+gin-ranking/pkg/logger.Recover(0xc000150000)
+	d:/go/gin-ranking/pkg/logger/logger.go:154 +0x7c
+github.com/gin-gonic/gin.(*Context).Next(0xc000150000)
+	C:/goproject/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185 +0x7a
+github.com/gin-gonic/gin.LoggerWithConfig.func1(0xc000150000)
+	C:/goproject/pkg/mod/github.com/gin-gonic/gin@v1.10.0/logger.go:249 +0xf2
+github.com/gin-gonic/gin.(*Context).Next(0xc000150000)
+	C:/goproject/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185 +0x7a
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1(0xc000150000)
+	C:/goproject/pkg/mod/github.com/gin-gonic/gin@v1.10.0/recovery.go:102 +0xfd
+github.com/gin-gonic/gin.(*Context).Next(0xc000150000)
+	C:/goproject/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185 +0x7a
+github.com/gin-gonic/gin.LoggerWithConfig.func1(0xc000150000)
+	C:/goproject/pkg/mod/github.com/gin-gonic/gin@v1.10.0/logger.go:249 +0xf2
+github.com/gin-gonic/gin.(*Context).Next(0xc000150000)
+	C:/goproject/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185 +0x7a
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest(0xc00009b040, 0xc000150000)
+	C:/goproject/pkg/mod/github.com/gin-gonic/gin@v1.10.0/gin.go:633 +0x42a
+github.com/gin-gonic/gin.(*Engine).ServeHTTP(0xc00009b040, {0xc7fc60, 0xc000148000}, 0xc000122000)
+	C:/goproject/pkg/mod/github.com/gin-gonic/gin@v1.10.0/gin.go:589 +0xbc
+net/http.serverHandler.ServeHTTP({0xc00028e100}, {0xc7fc60, 0xc000148000}, 0xc000122000)
+	D:/file/golang/src/net/http/server.go:3301 +0x257
+net/http.(*conn).serve(0xc0002b6090, {0xc80490, 0xc000116000})
+	D:/file/golang/src/net/http/server.go:2102 +0x1b75
+created by net/http.(*Server).Serve in goroutine 1
+	D:/file/golang/src/net/http/server.go:3454 +0xa9a
+
+panic error time:2025-02-26 18:36:04
+interface conversion: interface {} is string, not int
+stacktrace from panic:goroutine 19 [running]:
+runtime/debug.Stack()
+	D:/file/golang/src/runtime/debug/stack.go:26 +0x6b
+gin-ranking/pkg/logger.Recover.func1()
+	d:/go/gin-ranking/pkg/logger/logger.go:144 +0x56a
+panic({0x98e840?, 0xc000288510?})
+	D:/file/golang/src/runtime/panic.go:787 +0x136
+gin-ranking/controllers.UserController.Update({}, 0xc0002b8000)
+	d:/go/gin-ranking/controllers/user.go:45 +0x238
+github.com/gin-gonic/gin.(*Context).Next(0xc0002b8000)
+	C:/goproject/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185 +0x7a
+gin-ranking/pkg/logger.Recover(0xc0002b8000)
+	d:/go/gin-ranking/pkg/logger/logger.go:154 +0x7c
+github.com/gin-gonic/gin.(*Context).Next(0xc0002b8000)
+	C:/goproject/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185 +0x7a
+github.com/gin-gonic/gin.LoggerWithConfig.func1(0xc0002b8000)
+	C:/goproject/pkg/mod/github.com/gin-gonic/gin@v1.10.0/logger.go:249 +0xf2
+github.com/gin-gonic/gin.(*Context).Next(0xc0002b8000)
+	C:/goproject/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185 +0x7a
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1(0xc0002b8000)
+	C:/goproject/pkg/mod/github.com/gin-gonic/gin@v1.10.0/recovery.go:102 +0xfd
+github.com/gin-gonic/gin.(*Context).Next(0xc0002b8000)
+	C:/goproject/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185 +0x7a
+github.com/gin-gonic/gin.LoggerWithConfig.func1(0xc0002b8000)
+	C:/goproject/pkg/mod/github.com/gin-gonic/gin@v1.10.0/logger.go:249 +0xf2
+github.com/gin-gonic/gin.(*Context).Next(0xc0002b8000)
+	C:/goproject/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185 +0x7a
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest(0xc000136000, 0xc0002b8000)
+	C:/goproject/pkg/mod/github.com/gin-gonic/gin@v1.10.0/gin.go:633 +0x42a
+github.com/gin-gonic/gin.(*Engine).ServeHTTP(0xc000136000, {0xaa6580, 0xc0002b20e0}, 0xc0002ba280)
+	C:/goproject/pkg/mod/github.com/gin-gonic/gin@v1.10.0/gin.go:589 +0xbc
+net/http.serverHandler.ServeHTTP({0xc00013c100}, {0xaa6580, 0xc0002b20e0}, 0xc0002ba280)
+	D:/file/golang/src/net/http/server.go:3301 +0x257
+net/http.(*conn).serve(0xc000154090, {0xaa7100, 0xc00011a870})
+	D:/file/golang/src/net/http/server.go:2102 +0x1b75
+created by net/http.(*Server).Serve in goroutine 1
+	D:/file/golang/src/net/http/server.go:3454 +0xa9a
+
+panic error time:2025-02-26 18:36:27
+interface conversion: interface {} is string, not int
+stacktrace from panic:goroutine 19 [running]:
+runtime/debug.Stack()
+	D:/file/golang/src/runtime/debug/stack.go:26 +0x6b
+gin-ranking/pkg/logger.Recover.func1()
+	d:/go/gin-ranking/pkg/logger/logger.go:144 +0x56a
+panic({0x98e840?, 0xc0002886c0?})
+	D:/file/golang/src/runtime/panic.go:787 +0x136
+gin-ranking/controllers.UserController.Update({}, 0xc0002b8000)
+	d:/go/gin-ranking/controllers/user.go:45 +0x238
+github.com/gin-gonic/gin.(*Context).Next(0xc0002b8000)
+	C:/goproject/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185 +0x7a
+gin-ranking/pkg/logger.Recover(0xc0002b8000)
+	d:/go/gin-ranking/pkg/logger/logger.go:154 +0x7c
+github.com/gin-gonic/gin.(*Context).Next(0xc0002b8000)
+	C:/goproject/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185 +0x7a
+github.com/gin-gonic/gin.LoggerWithConfig.func1(0xc0002b8000)
+	C:/goproject/pkg/mod/github.com/gin-gonic/gin@v1.10.0/logger.go:249 +0xf2
+github.com/gin-gonic/gin.(*Context).Next(0xc0002b8000)
+	C:/goproject/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185 +0x7a
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1(0xc0002b8000)
+	C:/goproject/pkg/mod/github.com/gin-gonic/gin@v1.10.0/recovery.go:102 +0xfd
+github.com/gin-gonic/gin.(*Context).Next(0xc0002b8000)
+	C:/goproject/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185 +0x7a
+github.com/gin-gonic/gin.LoggerWithConfig.func1(0xc0002b8000)
+	C:/goproject/pkg/mod/github.com/gin-gonic/gin@v1.10.0/logger.go:249 +0xf2
+github.com/gin-gonic/gin.(*Context).Next(0xc0002b8000)
+	C:/goproject/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185 +0x7a
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest(0xc000136000, 0xc0002b8000)
+	C:/goproject/pkg/mod/github.com/gin-gonic/gin@v1.10.0/gin.go:633 +0x42a
+github.com/gin-gonic/gin.(*Engine).ServeHTTP(0xc000136000, {0xaa6580, 0xc0002b21c0}, 0xc0002ba500)
+	C:/goproject/pkg/mod/github.com/gin-gonic/gin@v1.10.0/gin.go:589 +0xbc
+net/http.serverHandler.ServeHTTP({0xc00013c100}, {0xaa6580, 0xc0002b21c0}, 0xc0002ba500)
+	D:/file/golang/src/net/http/server.go:3301 +0x257
+net/http.(*conn).serve(0xc000154090, {0xaa7100, 0xc00011a870})
+	D:/file/golang/src/net/http/server.go:2102 +0x1b75
+created by net/http.(*Server).Serve in goroutine 1
+	D:/file/golang/src/net/http/server.go:3454 +0xa9a
+
